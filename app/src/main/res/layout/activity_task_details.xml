@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.re_coded.example.android.taskapp.TaskDetails">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/task_title"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:id="@+id/title_edit_text"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/task_description"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:id="@+id/desc_edit_text"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center">
+        <CheckBox
+            android:id="@+id/done_check_box"
+            android:visibility="gone"
+            android:text="@string/finished_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="@string/task_due_date"
+            />
+        <ImageButton
+            android:id="@+id/pick_date"
+            android:src="@drawable/calender"
+            android:text="@string/finished_task"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:id="@+id/save_button"
+            style="@style/saveButtonTheme"
+            android:layout_width="match_parent"
+            android:text="Save"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/delete_button"
+            />
+
+        <Button
+            android:id="@+id/delete_button"
+            style="@style/deleteButtonTheme"
+            android:layout_width="match_parent"
+            android:text="Delete"
+            android:layout_margin="10dp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

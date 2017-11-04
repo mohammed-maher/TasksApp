@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TaskApp</string>
+    <string name="task_title">Title</string>
+    <string name="task_description">Description</string>
+    <string name="finished_task">Finished</string>
+    <string name="saved_task_message">Task saved successfully!</string>
+    <string name="delete_dialouge_title">Delete</string>
+    <string name="delete_dialouge_message">Do you want to Delete</string>
+    <string name="task_updated_message">Task updated successfully!</string>
+    <string name="task_deleted_message">Task deleted successfully!</string>
+    <string name="task_due_date">Due Date</string>
+    <string name="due_today_text">Due Today</string>
+    <string name="over_due_text">Over Due</string>
+</resources>
